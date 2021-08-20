@@ -82,12 +82,15 @@ function pet(userId, authorization) {
         "c1fb1956038249bea19252ad48959fb4",
         "4312dd90064a4eb6a5027c0cd5a82707"
     ];
-    
-    pets.forEach(function (id, i) {
+
+    var delay = 2000;
+
+    //delay the petting
+    for (let i = 0; i < 10; i++) {
         setTimeout(function () {
 
             //interact with the pet
-            fetch(`https://eu.mspapis.com/pets/v1/pets/${id}/interactions`, {
+            fetch(`https://eu.mspapis.com/pets/v1/pets/${pets[id]}/interactions`, {
                 "headers": {
                     "accept": "*/*",
                     "accept-language": "en-GB,en;q=0.9",
@@ -104,7 +107,7 @@ function pet(userId, authorization) {
                 "body": `{"profileId":"${userId}","gameId":"j68d"}`,
                 "method": "POST",
                 "mode": "cors"
-            }).then(console.log(`Petted ${id}`));
-        }, i * 2000);
-    });
+            }).then(console.log(`Petted ${pets[id]}`));
+        }, i * delay);
+    }
 };
