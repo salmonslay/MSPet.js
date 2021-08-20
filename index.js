@@ -69,7 +69,17 @@ function pet(userId, authorization) {
         "8034fa8002574c1582856cb6b4b6fceb",
         "53fc952f04d24c8a9ea27fef83402576",
         "27e42204c22c44bdbd570e9c31f87415",
-        "847dc3f04ac040f78047a3f7fa322201"
+        "847dc3f04ac040f78047a3f7fa322201",
+        "c26e5b904f35437aa392bb3d1f9af6f8",
+        "11bb6dc4e91c4129a49974e68515d451",
+        "454fc60941924316abbdf11658656e4d",
+        "a1e0f97f9f5e48898f2e8e728a8e39e6",
+        "744374b99c4345b48fc2d3cd4593104b",
+        "375ea9a2d78a4f5f84f372aba63156af",
+        "541dcbc04f964749a661fd3fd0213fe2",
+        "3731da13870d4ebd86cc4116bc2ba6eb",
+        "c1fb1956038249bea19252ad48959fb4",
+        "4312dd90064a4eb6a5027c0cd5a82707"
     ];
 
     pets.forEach(function (id, i) {
@@ -94,6 +104,6 @@ function pet(userId, authorization) {
                 "method": "POST",
                 "mode": "cors"
             }).then(console.log(`Petted ${id}`));
-        }, i * 3000);
+        }, i * 2000);
     });
 };
