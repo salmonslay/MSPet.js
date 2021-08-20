@@ -90,7 +90,7 @@ function pet(userId, authorization) {
         setTimeout(function () {
 
             //interact with the pet
-            fetch(`https://eu.mspapis.com/pets/v1/pets/${pets[id]}/interactions`, {
+            fetch(`https://eu.mspapis.com/pets/v1/pets/${pets[i]}/interactions`, {
                 "headers": {
                     "accept": "*/*",
                     "accept-language": "en-GB,en;q=0.9",
@@ -107,7 +107,7 @@ function pet(userId, authorization) {
                 "body": `{"profileId":"${userId}","gameId":"j68d"}`,
                 "method": "POST",
                 "mode": "cors"
-            }).then(console.log(`Petted ${pets[id]}`));
+            }).then(console.log(`Petted ${pets[i]}`));
         }, i * delay);
     }
 };
