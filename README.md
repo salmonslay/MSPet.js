@@ -1,6 +1,8 @@
 # MSPet.js
 Node.js app to automatically gain xp in MovieStarPlanet by petting pets.
 
+⚠ This will only work on **Swedish** servers.
+
 ## Demo
 [Video](https://www.youtube.com/watch?v=prrJxgqTvkQ)
 
