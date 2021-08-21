@@ -344,3 +344,4 @@ data/
 
 #obv
 .env
+credentials.txt
