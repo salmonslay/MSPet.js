@@ -14,7 +14,7 @@ cd MSPet.js
 npm install
 ```
 
-2. Create a file called credentials.txt with this content:
+2. Create a file called `credentials.txt` with this content:
 ```
 username
 password
