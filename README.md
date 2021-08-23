@@ -11,7 +11,7 @@ Requires [Node.js](https://nodejs.org/en/) v12+
 
 1. Clone the project
 ```bash
-git clone https://github.com/LiterallyFabian/midi-osu.git
+git clone https://github.com/LiterallyFabian/MSPet.js.git
 cd MSPet.js
 npm install
 ```
