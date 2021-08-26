@@ -22,9 +22,9 @@ fs.readFile("credentials.txt", "utf8", (err, data) => {
                 "sec-fetch-mode": "cors",
                 "sec-fetch-site": "cross-site"
             },
-            "referrer": "https://moviestarplanet2.se/",
+            "referrer": "https://moviestarplanet2.de/",
             "referrerPolicy": "strict-origin-when-cross-origin",
-            "body": `client_id=unity.client&client_secret=secret&grant_type=password&scope=openid%20nebula%20offline_access&username=SE%7c${username}&password=${password}&acr_values=gameId%3aj68d`,
+            "body": `client_id=unity.client&client_secret=secret&grant_type=password&scope=openid%20nebula%20offline_access&username=DE%7c${username}&password=${password}&acr_values=gameId%3aj68d`,
             "method": "POST",
             "mode": "cors"
         }).then(res => res.json())
@@ -45,7 +45,7 @@ fs.readFile("credentials.txt", "utf8", (err, data) => {
                         "sec-fetch-mode": "cors",
                         "sec-fetch-site": "cross-site"
                     },
-                    "referrer": "https://moviestarplanet2.se/",
+                    "referrer": "https://moviestarplanet2.de/",
                     "referrerPolicy": "strict-origin-when-cross-origin",
                     "body": `grant_type=refresh_token&refresh_token=${loginidentity.refresh_token}&acr_values=gameId%3aj68d%20profileId%3a${userId}`,
                     "method": "POST",
@@ -102,7 +102,7 @@ function pet(userId, authorization) {
                     "sec-fetch-mode": "cors",
                     "sec-fetch-site": "cross-site"
                 },
-                "referrer": "https://moviestarplanet2.se/",
+                "referrer": "https://moviestarplanet2.de/",
                 "referrerPolicy": "strict-origin-when-cross-origin",
                 "body": `{"profileId":"${userId}","gameId":"j68d"}`,
                 "method": "POST",
