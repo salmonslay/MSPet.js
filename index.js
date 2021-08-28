@@ -59,14 +59,6 @@ fetch("https://eu.mspapis.com/loginidentity/connect/token", {
 
 function pet(authorization) {
     var pets = [
-        /*"be3ec39825a8418ca67a9db50f187b5f",
-         "bf445340671747558085b150a9f6520f",
-         "71e8ce50fd0d41eeb71b37e8ae1f5add",
-         "257fc13d6afa46428f75fee61ac1a0cf",
-         "8034fa8002574c1582856cb6b4b6fceb",
-         "53fc952f04d24c8a9ea27fef83402576",
-         "27e42204c22c44bdbd570e9c31f87415",
-         "847dc3f04ac040f78047a3f7fa322201",*/
         "c26e5b904f35437aa392bb3d1f9af6f8",
         "11bb6dc4e91c4129a49974e68515d451",
         "454fc60941924316abbdf11658656e4d",
