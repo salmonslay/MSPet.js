@@ -16,14 +16,9 @@ cd MSPet.js
 npm install
 ```
 
-2. Create a file called `credentials.txt` with this content:
-```
-username
-password
-userId
-```
+2. Add your credentials to the `.env` file
 
-3. Start the program
+4. Start the program
 ```bash
 npm start
 ```
