@@ -3,7 +3,6 @@ const fetch = require('node-fetch');
 require('dotenv').config();
 
 var authorization = "Bearer ";
-console.log(process.env)
 console.log(`Logging in as ${process.env.MSP_USERNAME}...\n`);
 
 //get refresh token
